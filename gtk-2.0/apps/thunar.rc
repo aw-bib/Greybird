@@ -2,8 +2,8 @@ style "sidepane"
 {
 	GtkTreeView::vertical-separator = 4
 
-	base[NORMAL]		= mix (0.1, shade (1.35,@selected_bg_color), shade (0.9,@base_color))
-	base[INSENSITIVE]	= mix (0.4, shade (1.35,@selected_bg_color), shade (0.9,@base_color))
+	base[NORMAL] = @bg_sidebar
+	base[INSENSITIVE] = @bg_sidebar
 
 	text[NORMAL]		= mix (0.7, @text_color, @base_color)
 	text[ACTIVE]		= mix (0.7, @text_color, @base_color)
